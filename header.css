@@ -1,0 +1,145 @@
+body {
+    background-color: var(--bg-color-primary);
+}
+
+header {
+    max-width: 1366px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1366px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+header {
+    max-width: 1366px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1366px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%; 
+    max-width: 627px; 
+}
+
+.add-item {
+    display: grid;
+    grid-template-columns: 451px 1fr;
+    gap: 1rem;
+    max-height: none; 
+}
+
+.add-item input,
+.add-item button {
+    border-radius: 8px;
+    height: 44px;
+}
+
+@media (max-width: 390px) {
+    #home {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 390px;
+        padding-top: 78px;
+    }
+
+    .container {
+        width: calc(100% - 64px); 
+        max-width: 390px;
+        padding-inline: 32px;
+        margin: auto; 
+    }
+
+    .container-list {
+        width: 100%;
+        max-width: 100%; 
+    }
+
+    .add-item {
+        display: flex; 
+        flex-direction: column; 
+        gap: 1rem; 
+        width: 100%; 
+    }
+
+    .add-item input,
+    .add-item button {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1366px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    & .title {
+        display: flex;
+        gap: 10px;
+        padding-bottom: 62px;
+
+        & h1 {
+            color: var(--text-color-secondary);
+        }
+
+    }
+
+    & .container-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 627px;
+
+        & h2 {
+            margin-bottom: 44px;
+        }
+
+        & button {
+            margin-bottom: 40px;
+        }
+
+    }
+
+}
+
+
+#home {
+    margin-bottom: 1rem;
+}
+.hidden {
+    /* display: none; */
+}

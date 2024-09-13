@@ -1,0 +1,37 @@
+.itens-adicionado {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    & .item {
+        background-color: var(--bg-color-secondary);
+        border-radius: 8px;
+        height: 49px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & label  {
+            display: flex;
+            gap: 20px;
+        }
+
+    }
+}
+
+.item:hover {
+    & label img {
+        content: url('./assets/icons/checkbox-hover.svg'); /* Imagem de hover */
+    }
+}
+
+
+
+
+
+
+input[type="checkbox"] {
+    /* display: none; */
+}

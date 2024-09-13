@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border-color: var(--border-primary);
+    box-sizing: border-box;
 
     &:hover {
         border-color: var(--border-hover);

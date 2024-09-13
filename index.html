@@ -13,12 +13,79 @@
 
 </head>
 <body>
-    <h1>Titulo</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vel sit fugiat eaque rerum tempore dolorum in, sequi qui laboriosam cupiditate vero saepe temporibus nemo minima ea praesentium esse quod!</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quam temporibus. Nisi iusto quia inventore officia, error nam assumenda deserunt, a magnam, ratione laudantium beatae praesentium omnis nemo enim perspiciatis.</p>
+
+    <header id="main">
+        <div class="container">
+            <div class="title" id="home">
+                <img src="./assets/logo.svg" alt="">
+                <h1>quicklist</h1>
+            </div>
+
+
+
+            <div class="container-list">
+
+                <a href="#" class="return">
+                    <-Voltar
+                </a>
+
+                <h2>Compras da semana</h2>
+
+                <div class="add-item">
+                    <input type="text" name="adicionar" placeholder="Adicione um novo item">
+                    <button>Adicionar item</button>
+                </div>
+
+                <form action="#" class="itens-adicionado hidden">
+                    <div class="item">
+                        <label>
+                            <input type="checkbox" id="item-1">
+                            <img src="./assets/icons/checkbox.svg" alt="Checkbox">
+                            <span>ITEM NUMERO 1</span>
+                        </label>
+                        <img src="./assets/icons/lixeira.svg" alt="Excluir ITEM NUMERO 1">
+                    </div>
+                
+                    <div class="item">
+                        <label>
+                            <input type="checkbox" id="item2">
+                            ITEM NUMERO 2
+                        </label>
+                        <img src="./assets/icons/lixeira.svg" alt="Excluir ITEM NUMERO 2">
+                    </div>
+                
+                    <div class="item">
+                        <label>
+                            <input type="checkbox" id="item3">
+                            ITEM NUMERO 3
+                        </label>
+                        <img src="./assets/icons/lixeira.svg" alt="Excluir ITEM NUMERO 3">
+                    </div>
+                
+                    <div class="item">
+                        <label>
+                            <input type="checkbox" id="item4">
+                            ITEM NUMERO 4
+                        </label>
+                        <img src="./assets/icons/lixeira.svg" alt="Excluir ITEM NUMERO 4">
+                    </div>
+                </form>
+                
+
+                <div class="alert">
+                    <img src="./assets/icons/alert.svg" alt="">
+                        <span>O item foi removido da lista</span>
+                        <img src="./assets/icons/close.svg" alt="">
+                    </img>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </header>
 
     <script src="script.js"></script>
 
-    <input type="text" placeholder="DIGITE AQUI">
 </body>
 </html>
