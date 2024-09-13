@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: "Inter", sans-serif;
+
+
+    /* COLOR */
+    --bg-color-primary: #F4F5FB;
+    --bg-color-secondary: #FFFFFF;
+
+    --brand-color: #CA3884;
+    --brand-color-hover: #A52C6B;
+    --danger-color: #C93847;
+
+    --text-color-primary: #080B12;
+    --text-color-secondary: #374151;
+    --text-color-tertiary: #9CA3AF;
+    --white: #FFFFFF;
+
+    --border-primary: #D1D5DB;
+    --border-hover: #B9C2D0;
+
+    /* FONTES */
+    --title: 800 24px/2rem "Inter", sans-serif;
+    --label: 600 16px/1.25rem "Inter", sans-serif;
+    --paragraph: 400 16px/1.25rem "Inter", sans-serif;
+    --link: 400 16px/1rem "Inter", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    font: var(--link);
+    color: var(--brand-color)
+}
+
+h1 {
+    font: var(--title)
+}
