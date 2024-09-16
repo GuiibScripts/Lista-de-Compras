@@ -44,6 +44,8 @@ header {
     gap: 1rem;
     width: 100%; 
     max-width: 627px; 
+
+
 }
 
 .add-item {
@@ -51,6 +53,20 @@ header {
     grid-template-columns: 451px 1fr;
     gap: 1rem;
     max-height: none; 
+    border: none;
+    box-shadow: none;
+
+    & input {
+        padding-left: 15px;
+        border-color: var(--border-primary);
+    }
+
+    & button {
+        border-color: var(--border-primary);
+        background-color: var(--brand-color);
+        font: var(--link);
+        color: var(--white);
+    }
 }
 
 .add-item input,
@@ -140,6 +156,20 @@ header {
 #home {
     margin-bottom: 1rem;
 }
-.hidden {
-    /* display: none; */
+
+#hidden {
+    display: none;
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-inline: 12px;
+    font: var(--paragraph);
+    color: var(--bg-color-secondary);
+    height: 44px;
+    background-color: var(--danger-color);
+    margin-bottom: 137px;
+    border-radius: 10px;
 }
